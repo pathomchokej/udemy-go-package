@@ -1,3 +1,8 @@
 package hello
 
-func Hello() string { return "Hello from package." }
+import "rsc.io/quote/v4"
+
+func Hello() string {
+	return quote.Hello()
+	//return "Hello from package."
+}
